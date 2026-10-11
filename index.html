@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Repositorio de exámenes</title>
+  <meta name="description" content="Repositorio gratuito de exámenes universitarios.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#" id="brand"></a>
+    <nav>
+      <a href="#repositorio">Exámenes</a>
+      <a href="#beta" id="nav-beta">Beta</a>
+      <a href="#aportar">Aportar</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1 id="hero-title"></h1>
+    <p id="hero-sub"></p>
+    <input id="buscador" type="search" placeholder="Busca por curso, carrera o año…" aria-label="Buscar exámenes">
+  </section>
+
+  <main>
+    <section id="repositorio">
+      <div class="tabs" id="tabs" role="tablist"></div>
+      <div class="carreras" id="carreras"></div>
+      <div id="examenes" class="examenes"></div>
+    </section>
+
+    <section id="beta" class="beta">
+      <div class="beta-head">
+        <h2>Asesorías y material premium</h2>
+        <span class="badge">BETA</span>
+      </div>
+      <p id="beta-desc"></p>
+      <div class="beta-grid" id="beta-grid"></div>
+    </section>
+
+    <section id="aportar" class="aportar">
+      <h2>¿Tienes exámenes para compartir?</h2>
+      <p id="aportar-txt"></p>
+      <a class="btn" id="aportar-btn" target="_blank" rel="noopener"></a>
+    </section>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
